@@ -8,4 +8,3 @@ This includes an original implementation ofour paper:
 ![Model dataset](imgs/dataset2.png)
 
 
-![Method_overview](imgs/method2.png)
