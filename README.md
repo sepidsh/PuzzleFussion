@@ -5,7 +5,7 @@ This includes an original implementation ofour paper:
 ***Further details, instructions on code and along with datasets will be published shortly.***
 
 
-![Model dataset](imgs/datasets2.png)
+![Model dataset](imgs/datasets2.pdf)
 
 
-![Method_overview](imgs/method2.png)
+![Method_overview](imgs/method2.pdf)
