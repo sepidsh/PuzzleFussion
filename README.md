@@ -4,9 +4,19 @@ This includes an original implementation ofour paper:
 
 
 
+## Installation
+please run the command below to install the dependent libraries. 
+
+```
+conda create -n attempt_env python=3.8
+conda activate attempt_env
+python setup.py develop
+
 
 
 ![Model dataset](imgs/dataset2.png)
+
+
 
 
 
