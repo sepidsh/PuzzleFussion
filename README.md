@@ -4,6 +4,8 @@ This includes an original implementation ofour paper:
 
 
 
+![Model dataset](imgs/dataset2.png)
+
 ## Installation
 Our implementation builds upon the publicly available  [guided-diffusion](https://github.com/openai/guided-diffusion) repository by OpenAI. To begin, first clone our repository, PuzzleFusion, to your local machine. Following this, you can install the necessary dependencies by executing the commands provided below
 ```
@@ -29,8 +31,6 @@ We also have provided checkpoint for easier testing [here](https://drive.google.
 
 Samples will be saved in ./scripts/outputs and  model checkpoints will saved in to ./scripts/ckpts.
 
-
-![Model dataset](imgs/dataset2.png)
 
 
 
