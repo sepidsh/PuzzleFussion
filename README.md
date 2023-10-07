@@ -27,7 +27,7 @@ bash script.sh
 cd scripts
 bash script_test.sh
 ```
-We also have provided checkpoint for easier testing [here](https://drive.google.com/file/d/1jdqZFikSXTVDyOBErL0tn373RCcQKV1f/view?usp=share_link)
+We also have provided checkpoint for easier testing [here](https://drive.google.com/file/d/1jdqZFikSXTVDyOBErL0tn373RCcQKV1f/view?usp=share_link), you can download that and move it to ./scripts/ckpts/preds 
 
 Samples will be saved in ./scripts/outputs and  model checkpoints will saved in to ./scripts/ckpts.
 
