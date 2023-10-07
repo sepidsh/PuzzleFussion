@@ -5,8 +5,7 @@ This includes an original implementation ofour paper:
 
 
 ## Installation
-Our implementation is based on the public implementation of [guided-diffusion](https://github.com/openai/guided-diffusion). Firt clone the resposity then, 
-
+Our implementation builds upon the publicly available  [guided-diffusion](https://github.com/openai/guided-diffusion) repository by OpenAI. To begin, first clone our repository, PuzzleFusion, to your local machine. Following this, you can install the necessary dependencies by executing the commands provided below
 ```
 pip install -r requirements.txt
 pip install -e .
