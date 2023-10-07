@@ -25,6 +25,7 @@ For test you can run:
 cd scripts
 bash script_test.sh
 ```
+We also have provided checkpoint for easier testing [here](https://drive.google.com/file/d/1jdqZFikSXTVDyOBErL0tn373RCcQKV1f/view?usp=share_link)
 
 Samples will be saved in ./scripts/outputs and  model checkpoints will saved in to ./scripts/ckpts.
 
