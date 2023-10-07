@@ -5,12 +5,11 @@ This includes an original implementation ofour paper:
 
 
 ## Installation
-please run the command below to install the dependent libraries. 
+Our implementation is based on the public implementation of [guided-diffusion](https://github.com/openai/guided-diffusion). Firt clone the resposity then, 
 
 ```
-conda create -n attempt_env python=3.8
-conda activate attempt_env
-python setup.py develop
+pip install -r requirements.txt
+pip install -e .
 
 
 
