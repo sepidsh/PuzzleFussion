@@ -11,20 +11,20 @@ import cv2
 
 import io
 import PIL.Image as Image
-import drawSvg as drawsvg
+import drawsvg as drawsvg
 import cairosvg
 import imageio
 from tqdm import tqdm
 from pytorch_fid.fid_score import calculate_fid_given_paths
-from jigsawplan.crosscut_dataset import load_crosscut_data
-from jigsawplan.script_util import (
+from puzzle_fusion.crosscut_dataset import load_crosscut_data
+from puzzle_fusion.script_util import (
     model_and_diffusion_defaults,
     create_model_and_diffusion,
     add_dict_to_argparser,
     args_to_dict,
     update_arg_parser,
 )
-from jigsawplan import dist_util
+from puzzle_fusion import dist_util
 import webcolors
 import networkx as nx
 from collections import defaultdict
@@ -171,20 +171,20 @@ def save_samples(sample, ext, model_kwargs, rotation, tmp_count, save_gif=False,
                 for corner in poly:
                     draw.append(drawsvg.Circle(corner[0], corner[1], 2*(resolution/256), fill=ID_COLOR[room_type], fill_opacity=1.0, stroke='gray', stroke_width=0.25))
                     draw3.append(drawsvg.Circle(corner[0], corner[1], 2*(resolution/256), fill=ID_COLOR[room_type], fill_opacity=1.0, stroke='gray', stroke_width=0.25))
-            images.append(Image.open(io.BytesIO(cairosvg.svg2png(draw.asSvg()))))
-            images2.append(Image.open(io.BytesIO(cairosvg.svg2png(draw2.asSvg()))))
-            images3.append(Image.open(io.BytesIO(cairosvg.svg2png(draw3.asSvg()))))
+            #images.append(Image.open(io.BytesIO(cairosvg.svg2png(draw.asSvg()))))
+            #images2.append(Image.open(io.BytesIO(cairosvg.svg2png(draw2.asSvg()))))
+            #images3.append(Image.open(io.BytesIO(cairosvg.svg2png(draw3.asSvg()))))
             if k==sample.shape[0]-1 or True:
                 if save_edges:
-                    draw.saveSvg(f'outputs/{ext}/{tmp_count+i}_{k}_{ext}.svg')
+                    draw.save_svg(f'outputs/{ext}/{tmp_count+i}_{k}_{ext}.svg')
                 if save_svg:
-                    draw_color.saveSvg(f'outputs/{ext}/{tmp_count+i}c_{k}_{ext}.svg')
+                    draw_color.save_svg(f'outputs/{ext}/{tmp_count+i}c_{k}_{ext}.svg')
                 else:
                     Image.open(io.BytesIO(cairosvg.svg2png(draw_color.asSvg()))).save(f'outputs/{ext}/{tmp_count+i}c_{ext}.png')
-        if save_gif:
-            imageio.mimwrite(f'outputs/gif/{tmp_count+i}.gif', images, fps=10, loop=1)
-            imageio.mimwrite(f'outputs/gif/{tmp_count+i}_v2.gif', images2, fps=10, loop=1)
-            imageio.mimwrite(f'outputs/gif/{tmp_count+i}_v3.gif', images3, fps=10, loop=1)
+        # if save_gif:
+        #     imageio.mimwrite(f'outputs/gif/{tmp_count+i}.gif', images, fps=10, loop=1)
+        #     imageio.mimwrite(f'outputs/gif/{tmp_count+i}_v2.gif', images2, fps=10, loop=1)
+        #     imageio.mimwrite(f'outputs/gif/{tmp_count+i}_v3.gif', images3, fps=10, loop=1)
     return sample[-1]
 
 def main():
@@ -210,13 +210,10 @@ def main():
         os.makedirs('outputs/gif', exist_ok=True)
 
         if args.dataset=='crosscut':
-            ID_COLOR = {1: "#A19E74",2: "#B18463", 3:"#E8D7FF",4: "#FEFBA3",
-                        5: "#292A39",6: "#FFD2FC",7: "#68D1CC",8: "#FC696B",
-                        9: "#D9BA8B",10: "#232B33",11: "#D3E7D0",12: "#39272F",
-                        13: "#33443E",14: "#7B813D",15: "#E980FC",16: "#D65E2E",
-                        17:"#D57C59",18: "#8E838C",19: "#3F3052" ,20:"#043E5F",
-                        21: "#8CD0A1",22: "#C1DBAE",23: "#B96AC9",24: "#231B1B",
-                        25: "#640D0E" ,26: "#D3B675" ,27:"#82A07E" ,28:"#B89C6F" }
+            ID_COLOR = {1: '#EE4D4D', 2: '#C67C7B', 3: '#FFD274', 4: '#BEBEBE', 5: '#BFE3E8',
+                        6: '#7BA779', 7: '#E87A90', 8: '#FF8C69', 9: '#1F849B', 10: '#727171',
+                        11: '#785A67', 12:'#D3A2C7', 13: '#ff55a3',14 : '#d7e8fc', 15: '#ff91af' ,
+                        16 :'#d71868', 17: '#d19fe8', 18: '#00cc99', 19: '#eec8c8', 20:'#739373'}
             num_room_types = 14
             data = load_crosscut_data(
                 batch_size=args.batch_size,

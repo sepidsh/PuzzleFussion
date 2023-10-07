@@ -5,17 +5,17 @@ Train a diffusion model on images.
 import argparse
 
 import torch as th
-from jigsawplan import logger, dist_util
-from jigsawplan.crosscut_dataset import load_crosscut_data
-from jigsawplan.resample import create_named_schedule_sampler
-from jigsawplan.script_util import (
+from puzzle_fusion import logger, dist_util
+from puzzle_fusion.crosscut_dataset import load_crosscut_data
+from puzzle_fusion.resample import create_named_schedule_sampler
+from puzzle_fusion.script_util import (
     model_and_diffusion_defaults,
     create_model_and_diffusion,
     args_to_dict,
     add_dict_to_argparser,
     update_arg_parser,
 )
-from jigsawplan.train_util import TrainLoop
+from puzzle_fusion.train_util import TrainLoop
 
 
 def main():
