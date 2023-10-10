@@ -15,7 +15,7 @@ pip install -e .
 
 ## Crosscut puzzles
 
-The Cross Cut dataset can be accessed via this [crosscut-data](https://drive.google.com/file/d/1kRRI9V6ro1MK0f-rNbw0hg5jw_WVwlzw/view?usp=share_link),e utilized the original code from the [Crossing cut puzzle Paper code ](https://openaccess.thecvf.com/content/CVPR2021/papers/Harel_Crossing_Cuts_Polygonal_Puzzles_Models_and_Solvers_CVPR_2021_paper.pdf) to generate the data. After downloading the data, please place it within a folder named 'datasets'.  
+The Cross Cut dataset can be accessed via this [crosscut-data](https://drive.google.com/file/d/1kRRI9V6ro1MK0f-rNbw0hg5jw_WVwlzw/view?usp=share_link), we utilized the original code from the [Crossing cut puzzle Paper code ](https://openaccess.thecvf.com/content/CVPR2021/papers/Harel_Crossing_Cuts_Polygonal_Puzzles_Models_and_Solvers_CVPR_2021_paper.pdf) to generate the data. After downloading the data, please place it within a folder named 'datasets'.  
 
 ***For training you can run:***
 ```
