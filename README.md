@@ -31,7 +31,7 @@ We also have provided checkpoint for easier testing [here](https://drive.google.
 
 
 ## Voronoi puzzles
-The Voronoi dataset can be accessed via this [Voronoi-data](), we utilized the om the [Vornoi puzzle  maker ](https://github.com/sepidsh/PuzzleFussion/blob/main/Voronoi_samples/vor_dataset_maker.py) to generate the data. After downloading the data, please place it within a folder named 'datasets'.
+The Voronoi dataset can be accessed via this [Voronoi-data](), we utilized the om the [Vornoi puzzle  Generator ](https://github.com/sepidsh/PuzzleFussion/blob/main/Voronoi_samples/vor_dataset_maker.py) to generate the data. After downloading the data, please place it within a folder named 'datasets'.
 
 Samples will be saved in ./scripts/outputs and  model checkpoints will saved in to ./scripts/ckpts. Scripts for Vornoi dataset can be found in ./scripts/voronoi_scripts. You can move the file inside there to main ./scripts file. Similarry Although codes are almost identical we provided puzzle fusion voronoi version code under the fulder puzzle_fusion/puzzle_fusion_voronoi you can replaze the files there with files inside puzzle_fusion. Voronoi data reader is also there. 
 
