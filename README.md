@@ -48,6 +48,12 @@ bash script_test.sh
 ```
 We also have provided checkpoint for easier testing [here](https://drive.google.com/file/d/1VB_7M6Uodb6eK2DDMprAuZUdT9UaCA4O/view?usp=share_link), you can download that and move it to ./scripts/ckpts/preds
 
+
+
+## MagicPlan 
+
+You can download MagicPlan dataset from  [here](https://drive.google.com/file/d/1cu4HQHhCMyezzgUbpFn_5ymqT46xXQdz/view?usp=sharing), dataset follows same license as code.
+
 ## Citation
 
 ```
