@@ -48,7 +48,18 @@ bash script_test.sh
 ```
 We also have provided checkpoint for easier testing [here](https://drive.google.com/file/d/1VB_7M6Uodb6eK2DDMprAuZUdT9UaCA4O/view?usp=share_link), you can download that and move it to ./scripts/ckpts/preds
 
+## Citation
 
+```
+@inproceedings{
+hosseini2023puzzlefusion,
+title={Puzzlefusion: Unleashing the Power of Diffusion Models for Spatial Puzzle Solving},
+author={Sepidehsadat Hosseini and Mohammad Amin Shabani and Saghar Irandoust and Yasutaka Furukawa},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=Z764QxwETf}
+}
+```
 
 
 
