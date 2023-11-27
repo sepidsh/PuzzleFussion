@@ -71,4 +71,4 @@ url={https://openreview.net/forum?id=Z764QxwETf}
 
 
 
-***Further details for magicplan dataset/rplan , instructions on code and along with datasets will be published shortly.***
+***Further details for magicplan dataset/rplan, will be published shortly.***
