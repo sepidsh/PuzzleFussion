@@ -52,7 +52,7 @@ We also have provided checkpoint for easier testing [here](https://drive.google.
 
 ## MagicPlan 
 
-You can download MagicPlan dataset from  [here](https://drive.google.com/file/d/1cu4HQHhCMyezzgUbpFn_5ymqT46xXQdz/view?usp=sharing), dataset follows same license as code.
+You can download MagicPlan dataset from  [here](https://drive.google.com/drive/folders/15IHJPRVwt32uUdKgHM8EWuI2Aa-PEFgw?usp=share_link), dataset follows same license as code.
 
 ## Citation
 
